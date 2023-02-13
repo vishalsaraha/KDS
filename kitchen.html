@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/bootstrap.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Savoys-KDS</title>
+</head>
+
+<body>
+    
+           <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+            <a class="navbar-brand" href="#"><p>Kitchen Display</p></a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Current Orders <span id="current-orders-count"
+                            class="badge badge-primary"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cancelled Orders <span id="cancelled-orders-count"
+                            class="badge badge-danger"></span></a>
+                </li>
+            </ul>
+            <a class="navbar-brand " href="#">
+                <i class="fa fa-cog btn-block " onclick="submitForm()"></i> Admin
+
+            </a>
+        </nav>
+
+
+        <div class="container ">
+            <div class="container-fluid">
+
+            <div class="row mt-5 gap-5">
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body text-center ">
+                        <div class="card-header bg-warning">
+                            <i class="fas fa-shopping-bag fa-1x"></i>
+                            <h5 class="card-title mt-3">Take Out</h5>
+                            <div class="card-header bg-warning">
+                                Timer:<div id="timer" class="d-none"></div>
+                              </div>
+                          </div>
+                        <p class="card-text">Order details here</p>
+                        <p class="card-text">Order details here</p>
+                        <p class="card-text">Order details here</p>
+                        <div class="d-flex justify-content-between">
+                            <button id="stopBtn" class="btn btn-secondary">Ready</button>
+                            <button  id="startBtn"  class="btn btn-primary">Start Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <div class="card-header bg-danger">
+                        <i class="fas fa-motorcycle fa-1x"></i>
+                        <h5 class="card-title mt-3">Delivery</h5>
+                    </div>
+                        <p class="card-text">Order details here</p>
+                        <p class="card-text">Order details here</p>
+                        <p class="card-text">Order details here</p>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary">Ready</button>
+                            <button type="button" class="btn btn-primary">Start Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <div class="card-header bg-success">
+                        <i class="fas fa-utensils fa-1x"></i>
+                        <h5 class="card-title">Table #1</h5>
+                    </div>
+                        <p class="card-text">Order details here</p>
+                        <p class="card-text">Order details here</p>
+                        <p class="card-text">Order details here</p>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary">Ready</button>
+                            <button type="button" class="btn btn-primary">Start Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <div class="card-header bg-success">
+                        <i class="fas fa-utensils fa-1x"></i>
+                        <h5 class="card-title">Table #2</h5>
+                    </div>
+                        <p class="card-text">Order details here</p>
+                        <p class="card-text">Order details here</p>
+                        <p class="card-text">Order details here</p>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary">Ready</button>
+                            <button type="button" class="btn btn-primary">Start Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <div class="card-header bg-success">
+                        <i class="fas fa-utensils fa-1x"></i>
+                        <h5 class="card-title">Table #3</h5>
+                    </div>
+                        <p class="card-text">Order details here</p>
+                        <p class="card-text">Order details here</p>
+                        <p class="card-text">Order details here</p>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary">Ready</button>
+                            <button type="button" class="btn btn-primary">Start Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <div class="card-header bg-success">
+                        <i class="fas fa-utensils fa-1x"></i>
+                        <h5 class="card-title">Table #4</h5>
+                    </div>
+                        <p class="card-text">Order details here</p>
+                        <p class="card-text">Order details here</p>
+                        <p class="card-text">Order details here</p>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary">Ready</button>
+                            <button type="button" class="btn btn-primary">Start Order</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <div class="card-header bg-success">
+                        <i class="fas fa-utensils fa-1x"></i>
+                        <h5 class="card-title">Table #5</h5>
+                    </div>
+                        <p class="card-text">Order details here</p>
+                        <p class="card-text">Order details here</p>
+                        <p class="card-text">Order details here</p>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary">Ready</button>
+                            <button type="button" class="btn btn-primary">Start Order</button>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+
+    </div>
+    <script>
+        const startBtn = document.getElementById('startBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        const timer = document.getElementById('timer');
+
+        let x;
+
+        startBtn.addEventListener('click', function () {
+            stopBtn.classList.remove('d-none');
+            timer.classList.remove('d-none');
+            let countDownDate = new Date().getTime() + 30 * 60 * 1000;
+
+            x = setInterval(function () {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                timer.innerHTML = minutes + "m " + seconds + "s ";
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    timer.innerHTML = "Order Complete";
+                }
+            }, 1000);
+        });
+
+        stopBtn.addEventListener('click', function () {
+            clearInterval(x);
+            timer.innerHTML = "Order Ready";
+        });
+    </script>
+    <script>
+        function submitForm() {
+            window.location.href = "admin.html";
+        }
+    </script>
+    <script src="src/bootstrap.min.js"></script>
+    <script src="src/app.js"></script>
+    <script src="src/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/8b23cb49a6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

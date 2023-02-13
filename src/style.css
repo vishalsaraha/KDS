@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round');
+@import "compass/css3";
+
+html body{
+  font-family:'Prompt';
+  background-color: lightgray;
+}
+.navbar {
+  position: relative;
+  z-index: 2;
+}
+
+/* .navbar {
+    position: absolute;
+    position: fixed;
+    margin-left: 110px;
+
+    font-family: 'Ink Free';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 10px;
+    letter-spacing: 0.01em;
+    z-index: 1;
+    color: #ffffff;
+    border-width: thick;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.699);
+
+    -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+}
+
+.navbar {
+    background-color: #ffdd00;
+}
+.navbar {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .nav-link {
+    font-size: 18px;
+    color: white;
+    margin-right: 20px;
+  }
+  
+  .nav-link:hover {
+    color: yellow;
+  }
+   */
+
+   .row
+   {
+    margin-top: 150px;
+   }
